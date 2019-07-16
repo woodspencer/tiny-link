@@ -6,4 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Link.create(original_link: "http://www.thereach.io/", short_link: "localhost:3000/GRAfRw")
+Link.create(original_link: "https://www.thereach.io/", short_link: "GRAhf_S")
+Link.create(original_link: "https://www.nymeria.io/", short_link: "5ARyaSt")
+Link.create(original_link: "https://github.com/woodspencer", short_link: "aL9i_E2")

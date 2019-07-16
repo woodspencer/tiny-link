@@ -10,7 +10,6 @@ class LinksController < ApplicationController
 
   def show
     @link = Link.find_by(short_link: params[:short_link])
-
   end
 
   def create
