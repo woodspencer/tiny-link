@@ -1,13 +1,16 @@
-<h1>Tiny Link</h1>
-
 <p>
+
+<form action= <%= new_link_path %>>
+    <input type="submit" value="Create a Tiny Link" />
+</form>
+
+<h3>Most recent Tiny Links:</h3>
+
+
 <% @link.each do |link| %>
   <ul>
     <a href = "<%= request.protocol + request.host_with_port + '/' + link.short_link %>"> <%= request.host_with_port + '/' + link.short_link %></a>
   </ul>
 <% end %>
 </p>
-
-<%= link_to 'Create your own Tiny Link', new_link_path %>
-
 
