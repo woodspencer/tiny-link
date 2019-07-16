@@ -1,7 +1,7 @@
 class LinksController < ApplicationController
-  'require securerandom'
+
   def index
-    @link = Link.all
+    @link = Link.last(10).reverse
   end
 
   def new
@@ -9,20 +9,29 @@ class LinksController < ApplicationController
   end
 
   def show
+    @link = Link.find_by(short_link: params[:short_link])
+
   end
 
   def create
     @link = Link.new(link_params)
+#   @link.short_link = request.base_url + '/' + @link.generate_short_link
     @link.short_link = @link.generate_short_link
+
     if @link.save
-      redirect_to @link
+      redirect_to links_path
     else
-      render 'new'
+      redirect_to new_link_path
     end
+  end
+
+  def goto()
+    @link = Link.find_by(short_link: params[:id])
+    redirect_to @link.original_link
   end
 
   private
     def  link_params
-      params.require(:original_link)
+      params.require(:link).permit(:original_link)
     end
 end
