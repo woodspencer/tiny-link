@@ -9,3 +9,5 @@ Rails framework and has the following features:
 * Open source license
 
 ![Peek 2019-07-16 20-11](https://user-images.githubusercontent.com/756455/61338245-8b309d80-a806-11e9-8317-8cc196486a16.gif)
+
+See [the license file](LICENSE.txt).
