@@ -15,7 +15,6 @@ class LinksController < ApplicationController
   def create
     @link = Link.new(link_params)
     @link.short_link = @link.generate_short_link
-
     if @link.save
       redirect_to links_path
     else
