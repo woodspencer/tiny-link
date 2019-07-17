@@ -22,7 +22,7 @@ class LinksController < ApplicationController
     end
   end
 
-  def goto()
+  def goto
     @link = Link.find_by(short_link: params[:id])
     redirect_to @link.original_link
   end
