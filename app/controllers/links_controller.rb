@@ -14,7 +14,6 @@ class LinksController < ApplicationController
 
   def create
     @link = Link.new(link_params)
-#   @link.short_link = request.base_url + '/' + @link.generate_short_link
     @link.short_link = @link.generate_short_link
 
     if @link.save
