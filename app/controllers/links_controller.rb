@@ -24,7 +24,11 @@ class LinksController < ApplicationController
 
   def goto
     @link = Link.find_by(short_link: params[:id])
-    redirect_to @link.original_link
+    begin
+      redirect_to @link.original_link
+    rescue
+      redirect_to new_link_path
+    end
   end
 
   private

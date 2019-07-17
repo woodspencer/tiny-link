@@ -1,6 +1,6 @@
 <h3>Create a new Tiny Link</h3>
 
 <%= form_with model: @link do |form| %>
-  <%= form.text_field :original_link %>
+  <%= form.url_field :original_link %>
   <%= form.submit 'Create a Tiny Link' %>
 <% end %>
