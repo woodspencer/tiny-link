@@ -10,4 +10,6 @@ Rails framework and has the following features:
 
 ![Peek 2019-07-16 20-11](https://user-images.githubusercontent.com/756455/61338245-8b309d80-a806-11e9-8317-8cc196486a16.gif)
 
+[Tiny Link Blog Post](https://www.spencerwood.me/articles/tiny-link)
+
 See [the license file](https://github.com/woodspencer/tiny-link/blob/master/LICENSE.txt).
